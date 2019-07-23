@@ -1,0 +1,28 @@
+# HELLO EVERYONE THIS IS ONE OF THE FAMOUS QUESTIONS OF LISTS IN PYTHON:
+
+# QUESTION : Write the program that prompts the user for a list of
+# numbers and prints out the maximum and minimum of the numbers at
+# the end when the user enters “done”. Write the program to store the
+# numbers the user enters in a list and use the max() and min() functions to
+# compute the maximum and minimum numbers after the loop completes.
+
+# ANSWER:  
+
+print('When you are all done type "done".')
+lst=[]
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:
+        num=int(num)
+    except:
+        print('Invalid number!')
+        continue
+    lst.append(num)
+
+print(lst)
+print('Max:',max(lst))
+print('Min:',min(lst))
+
+# Hope you get help from this code :) 
